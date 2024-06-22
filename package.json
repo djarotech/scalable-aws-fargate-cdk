@@ -1,0 +1,28 @@
+{
+  "name": "fargate-advanced-infra",
+  "version": "1.0.0",
+  "description": "Running a load balanced service on ECS",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk",
+    "deploy": "npm run build && cdk synth && cdk deploy"
+  },
+  "author": {
+    "name": "Daniel Moore",
+    "url": "https://aws.amazon.com",
+    "organization": true
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/node": "^8.10.38",
+    "aws-cdk": "*",
+    "typescript": "~5.1.6"
+  },
+  "dependencies": {
+    "@wheatstalk/fargate-spot-fallback": "^0.1.64",
+    "aws-cdk-lib": "^2.133.0",
+    "constructs": "^10.3.0"
+  }
+}
